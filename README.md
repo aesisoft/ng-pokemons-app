@@ -1,4 +1,4 @@
-# Application ***ng-pokemons-app*** pour le cours Angular 9
+# Application finale pour le cours Angular 9
 
 Ce projet est l'application Angular finale développée pas-à-pas dans le cours situé ici : https://cours.aesisoft.fr/Angular/ <br/>
 Etapes 1 à 5 : juste avant d'implémenter l'authentification ...
