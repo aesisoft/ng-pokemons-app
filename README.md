@@ -7,7 +7,7 @@ Cette application Angular fonctionne avec l'API Web Symfony5 qui se trouve ici :
 
 ___
 
-## Prerequis
+## Prérequis
 
 Il est nécessaire d'avoir un Node.JS et Angular version 9.
 
