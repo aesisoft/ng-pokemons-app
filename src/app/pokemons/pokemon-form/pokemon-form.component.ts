@@ -52,7 +52,7 @@ export class PokemonFormComponent implements OnChanges {
       ptvie: [0, Validators.required],
       ptdegat: [0, Validators.required],
       image: ['', Validators.required],
-      id: [0],
+      id: [null],
       created: [new Date()],
       types: new FormArray([])
      });
@@ -69,7 +69,7 @@ export class PokemonFormComponent implements OnChanges {
   // pour mettre à jour la propriété types du formulaire
   // à partir de la liste pokemonTypes affichés, non liée au formulaire !
   onCheckboxChange(e) {
-    const typesArray: FormArray = this.pokemonForm.get('poktypes') as FormArray;
+    const typesArray: FormArray = this.pokemonForm.get('types') as FormArray;
   
     if (e.target.checked) {
       typesArray.push(new FormControl(e.target.value));
@@ -83,6 +83,8 @@ export class PokemonFormComponent implements OnChanges {
         i++;
       });
     }
+    //nécessaire pour changer l'état du formulaire !
+    this.pokemonForm.markAsDirty();
   }
   
 

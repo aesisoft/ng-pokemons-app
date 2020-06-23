@@ -9,7 +9,7 @@ export class Pokemon {
 
     //initialisations par défaut
     constructor() { 
-      this.id=0;
+      this.id = null;
       this.created = new Date();
       this.types = [];
     }
